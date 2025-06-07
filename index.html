@@ -4,25 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/logo.svg" alt="logo" />Product</a
-        >
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="">Resources</a></li>
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="logo header-logo" href="./index.html"
+            ><img src="./images/logo.svg" alt="logo" />Product</a
+          >
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link current" href="./index.html">Product</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./customers.html">Customers</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-auth-list">
+          <li class="header-auth-item">
+            <button class="secondary-btn header-auth-btn" type="button">
+              Sign In
+            </button>
+          </li>
+          <li class="header-auth-item">
+            <button class="main-btn header-auth-btn" type="button">
+              Sign Up
+            </button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- hero -->
@@ -110,39 +145,59 @@
         </ul>
       </section>
       <!-- Contents -->
-      <section>
-        <h2>Contents Strategies</h2>
-        <p>
-          We focus on ergonomics and meeting you where you work. It's only a
-          keystroke away.
-        </p>
-        <ul>
-          <li>
-            <a href="">
-              <img
-                src="./images/image.png"
-                alt="work near laptop"
-                width="350"
-              />
-              <p>By Wahid Ari | 03 March 2019</p>
-              <h3>Increasing Prosperity With Positive Thinking</h3>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="./images/image2.png" alt="airport" width="350" />
-              <p>By Wahid Ari | 03 March 2019</p>
-              <h3>Motivation Is The First Step To Success</h3>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="./images/image3.png" alt="city" width="350" />
-              <p>By Wahid Ari | 03 March 2019</p>
-              <h3>Success Steps For Your Personal Or Business</h3>
-            </a>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h2 class="strategies-title">Contents Strategies</h2>
+          <p class="strategies-subtitle">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <ul class="strategies-list">
+            <li class="strategies-item">
+              <a href="">
+                <img
+                  src="./images/image.png"
+                  alt="work near laptop"
+                  width="350"
+                />
+                <div class="strategies-content">
+                  <p class="strategies-card-text">
+                    By <span>Wahid Ari</span> | 03 March 2019
+                  </p>
+                  <h3 class="strategies-card-title">
+                    Increasing Prosperity With Positive Thinking
+                  </h3>
+                </div></a
+              >
+            </li>
+            <li class="strategies-item">
+              <a href="">
+                <img src="./images/image2.png" alt="airport" width="350" />
+                <div class="strategies-content">
+                  <p class="strategies-card-text">
+                    By <span>Wahid Ari</span> | 03 March 2019
+                  </p>
+                  <h3 class="strategies-card-title">
+                    Motivation Is The First Step To Success
+                  </h3>
+                </div></a
+              >
+            </li>
+            <li class="strategies-item">
+              <a href="">
+                <img src="./images/image3.png" alt="city" width="350" />
+                <div class="strategies-content">
+                  <p class="strategies-card-text">
+                    By <span>Wahid Ari</span> | 03 March 2019
+                  </p>
+                  <h3 class="strategies-card-title">
+                    Success Steps For Your Personal Or Business
+                  </h3>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>
