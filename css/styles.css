@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #22343d;
   background-color: #fff;
@@ -167,9 +167,246 @@ button {
   color: #173a56;
   border: 1px solid #bcd0e5;
 }
+/*#section Hero*/
+.hero {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
 
-/*#endregion Header*/
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text-wrap {
+  max-width: 465px;
+}
+.hero-title {
+  font-size: 40px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  max-width: 372px;
+}
 
+.hero-text {
+  font-size: 18px;
+  line-height: 1.55556;
+  margin-bottom: 45px;
+}
+
+.hero-list-btn {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hero-btn-start {
+  border-radius: 4px;
+  min-width: 178px;
+  height: 53px;
+  background-color: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+.hero-btn-start:hover,
+.hero-btn-start:focus {
+  background-color: #22343d;
+}
+.hero-btn-watch {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #02897a;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.hero-btn-watch-icon {
+  fill: #02897a;
+}
+.hero-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-form-lable {
+  font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 5px;
+
+}
+
+.hero-form-input {
+  width: 325px;
+    height: 48px;
+    outline: transparent;
+    padding-left: 12px;
+    background-color: transparent;
+    border: 1px solid #bcd0e5;
+      border-radius: 4px;
+      margin-bottom: 25px;
+}
+.hero-form-input::placeholder{
+  line-height: 1.75;
+    color: #02897a;
+}
+.hero-form-btn {
+  border-radius: 4px;
+    width: 131px;
+    height: 39px;
+    background: #02897a;
+    font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      color: #fff;
+}
+/* Product */
+.product {
+  padding: 50px 0;
+}
+
+.product-title {
+  font-size: 32px;
+    text-align: center;
+    width: 535px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.product-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.product-item {
+  width: calc((100% - 90px) / 4);
+}
+
+.product-icon-wrap {
+  border-radius: 19px;
+    width: 54px;
+    height: 54px;
+    background-color: #02897a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+
+}
+.product-icon-wrap-second{
+  background-color: #4d8dff;
+}
+.product-icon-wrap-third{
+background-color: #740a76;
+}
+.product-icon-wrap-fourth{
+background: #f03e3d;
+}
+.product-icon {
+  fill: #fff;
+}
+
+.product-subtitle {
+  font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+.product-text {
+  font-size: 16px;
+    line-height: 1.625;
+}
+.product-btn{
+  border-radius: 4px;
+    min-width: 175px;
+    height: 53px;
+    background-color: #02897a;
+    font-weight: 700;
+      font-size: 16px;
+      color: #fff;
+      margin: 0 auto;
+      display: block;
+}
+/* curstomer */
+
+.curstomer {
+  padding: 50px 0;
+}
+
+.curstomer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.curstomer-text-wrap {
+  max-width: 450px;
+}
+
+.curstomer-title {
+  font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.curstomer-title-part {
+  font-weight: 700;
+    font-size: 32px;
+}
+
+.curstomer-text {
+  line-height: 1.625;
+  margin-bottom: 30px;
+}
+
+.curstomer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.curstomer-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.curstomer-icon-wrap {
+  border: 2.92px solid #fff;
+    border-radius: 14px;
+    width: 35px;
+    height: 35px;
+    background: #f90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.curstomer-icon {
+  fill: #fff;
+}
+
+.curstomer-desk {
+  line-height: 1.625;
+}
+
+.curstomer-icon-wrap-second {
+  background-color: #f03e3d;
+}
+
+.curstomer-icon-wrap-third {
+  background-color: #4d8dff;
+}
 /*#region Strategies*/
 
 .strategies-title {
